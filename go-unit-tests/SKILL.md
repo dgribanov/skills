@@ -1,8 +1,6 @@
 ---
 name: go-unit-tests
-description: Задача состоит в написании unit-тестов в проекте на языке Go
-modeSlugs:
-  - code
+description: Задача состоит в написании unit-тестов на языке Go
 ---
 
 # Go Unit Tests
@@ -92,8 +90,8 @@ func Test_Add(t *testing.T) {
 - Анонимная функция выполняет actual проверку
 
 Пример реального табличного теста находится здесь:
-- **`scripts/converter/converter.go`** — файл с функцией, которую нужно протестировать
-- **`scripts/converter/converter_test.go`** — файл с unit тестом
+- **`references/converter/converter.go`** — файл с функцией, которую нужно протестировать
+- **`references/converter/converter_test.go`** — файл с unit тестом
 
 ### ⚠️ Тестирование ошибок
 В Go ошибки это значения, и их тестирование критически важно для надежности.
@@ -135,5 +133,5 @@ func Test_Divide(t *testing.T) {
 - проверяйте не только наличие ошибки, но и её содержание
 
 Пример табличного теста с тестированием ошибки находится здесь:
-- **`scripts/version/version.go`** — файл с функцией, которую нужно протестировать
-- **`scripts/version/version_test.go`** — файл с unit тестом
+- **`references/version/version.go`** — файл с функцией, которую нужно протестировать
+- **`references/version/version_test.go`** — файл с unit тестом
